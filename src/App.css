@@ -1,0 +1,464 @@
+body {
+  background-color: #d9d9d9;
+}
+.section-one {
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 50px;
+  padding: 5%;
+  min-height: 95vh;
+  margin-top: 20px;
+  position: relative;
+  padding-top: 3%;
+}
+
+.header {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav {
+  margin-left: auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+}
+.nav-list li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+}
+.app-download {
+  background-color: #000;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.app-download:hover {
+  background-color: #000000e4;
+}
+.fa-apple {
+  margin-right: 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+.app-store-link {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 29px;
+  color: tomato;
+  cursor: pointer;
+}
+
+.rent-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.form {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.location {
+  width: 100%;
+  position: relative;
+}
+.location-input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #333;
+  height: 50px;
+  font-size: 16px;
+  padding-left: 35px;
+}
+.input-dot {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  color: #6d6d6d;
+}
+.active {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+}
+.cities {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  border-top: none;
+  padding-bottom: 20px;
+}
+.city {
+  width: 100%;
+  padding: 5px 0;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s all linear;
+  margin: 0;
+}
+.city:hover {
+  background-color: #cfe8f6;
+  cursor: pointer;
+}
+.city:hover > .fa-city {
+  color: #2a2a2a;
+}
+.fa-city {
+  padding-left: 10px;
+  padding-right: 5px;
+  color: #6d6d6d;
+}
+.country {
+  padding-left: 33px;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* datapicker */
+.dp-area {
+  position: relative;
+  width: 45%;
+}
+
+.fa-calendar-days {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  font-size: 18px;
+  color: tomato;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__header {
+  background-color: #f0f0f0;
+
+  padding: 8px;
+}
+.react-datepicker__input-container input {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+.react-datepicker__aria-live {
+  display: none;
+}
+
+/* ///// */
+.time-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+.time {
+  width: 45%;
+}
+.time-block {
+  width: 100%;
+  position: relative;
+}
+.time-select {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding-left: 35px;
+}
+.fa-clock {
+  position: absolute;
+  top: 15px;
+  font-size: 18px;
+  left: 15px;
+  color: #6d6d6d;
+}
+.form label {
+  display: block;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+/* form-info */
+
+.form-info {
+  width: 50%;
+  padding: 10px;
+  padding-top: 25px;
+  position: relative;
+}
+.cars {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+}
+.car {
+  min-width: 19%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 3px;
+  padding: 2px;
+  font-weight: 500;
+}
+.car-active {
+  border: 1px solid rgb(223, 118, 20);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.car:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+}
+.car-img {
+  width: 80%;
+}
+.img-box {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-rent-price {
+  font-weight: 900;
+}
+.tariff {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.correct {
+  color: #000;
+}
+.incorrect {
+  color: tomato;
+  font-size: 16px;
+  font-weight: normal;
+}
+.incorrect::before {
+  content: "-";
+}
+.calculation-info {
+  padding-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 10px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+}
+.selected-car-title {
+  font-weight: 500;
+}
+.city-select {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+.pickup-date-title {
+  font-size: 14px;
+}
+.result {
+  padding-top: 10px;
+}
+.rent {
+  display: block;
+  width: 40%;
+  margin: auto;
+  border: none;
+  background-color: rgba(67, 218, 43, 0.916);
+  height: 35px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.order {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  opacity: 0.8;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+}
+.order-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+.fa-check {
+  font-size: 56px;
+  display: block;
+  width: 30%;
+  height: 30%;
+  color: tomato;
+}
+
+.section-two {
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 50px;
+  padding: 5%;
+  min-height: 95vh;
+  margin-top: 20px;
+  gap: 10%;
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-app-img {
+  width: 45%;
+}
+.mobile-app-img img {
+  width: 85%;
+}
+.mobile-app-info {
+  width: 45%;
+}
+.mobile-app-info h2 {
+  font-weight: 900;
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+.mobile-app-info p {
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media screen and (max-width: 812px) {
+  .location input {
+    height: 40px;
+  }
+  .react-datepicker__input-container input {
+    height: 40px;
+  }
+  .time-select {
+    height: 35px;
+  }
+  .fa-calendar-days {
+    top: 60%;
+  }
+  .fa-clock {
+    top: 9px;
+  }
+  .input-dot {
+    top: 10px;
+  }
+  .section-one {
+    width: 95%;
+    border-radius: 25px;
+  }
+  .logo,
+  .app-link {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid red;
+    padding-bottom: 10px;
+  }
+  .nav {
+    margin-left: 0;
+  }
+  .nav-list {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .rent-form {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .form-info {
+    padding: 0;
+    margin-top: 10px;
+  }
+  .dp-area {
+    width: 100%;
+  }
+  .form-info {
+    width: 100%;
+  }
+  /* calendar */
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  .car-type {
+    font-size: 13px;
+  }
+}

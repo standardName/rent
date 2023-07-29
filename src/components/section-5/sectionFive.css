@@ -1,0 +1,143 @@
+.sectionFive {
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 50px;
+  padding: 5%;
+  min-height: 95vh;
+  margin-top: 20px;
+  position: relative;
+  padding-top: 3%;
+}
+.section-five-info {
+  width: 100%;
+  height: 300px;
+  background-color: #212528;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  justify-items: center;
+  margin-bottom: 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.section-five-info h1,
+span {
+  display: block;
+  margin-top: 20px;
+}
+button.section-five-button {
+  width: 20%;
+  display: block;
+  margin: auto;
+  height: 40px;
+  margin-top: 35px;
+  background-color: #fff;
+  color: #212528;
+  font-weight: 700;
+}
+button.section-five-button:hover {
+  background-color: #212528;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer div {
+  width: 33%;
+  height: 100px;
+}
+.footer-first-block {
+  display: flex;
+  align-items: flex-end;
+}
+.footer-first-block span {
+  display: block;
+  width: 30%;
+}
+.footer-nav ul {
+  list-style: none;
+}
+.footer-nav ul li {
+  display: block;
+  padding-bottom: 10px;
+}
+.footer-nav ul li a {
+  font-weight: 500;
+  color: #212528;
+  text-decoration: none;
+}
+.subscribe {
+  margin: 0;
+  font-weight: bold;
+}
+.footer-contact form {
+  position: relative;
+}
+.footer-contact input {
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background-color: #eff1f5;
+  border-radius: 5px;
+  height: 30px;
+  width: 70%;
+  margin-top: 10px;
+}
+.footer-contact input::placeholder {
+  color: #d8dade;
+}
+.fa-circle-arrow-right {
+  position: absolute;
+  right: 35%;
+  top: 17px;
+}
+
+@media screen and (max-width: 812px) {
+  .sectionFive {
+    min-height: 60vh;
+  }
+  button.section-five-button {
+    width: 80%;
+    display: block;
+    margin: auto;
+    height: 40px;
+  }
+  .section-five-info h1 {
+    display: block;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer div {
+    display: none;
+  }
+  .footer div.footer-nav {
+    display: block;
+    height: 120px;
+  }
+  .footer div.footer-contact {
+    display: block;
+    width: 100%;
+  }
+  .footer div.footer-contact input {
+    width: 100%;
+  }
+  .section-five-info {
+    margin-bottom: 10px;
+  }
+  .fa-circle-arrow-right {
+    position: absolute;
+    right: 5%;
+    top: 20px;
+  }
+  .footer-contact input{
+    height: 40px;
+  }
+}
